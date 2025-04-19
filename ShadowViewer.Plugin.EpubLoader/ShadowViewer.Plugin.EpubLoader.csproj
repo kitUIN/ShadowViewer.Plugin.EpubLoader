@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows10.0.22621.0</TargetFramework>
+		<TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+		<RootNamespace>ShadowViewer.Plugin.EpubLoader</RootNamespace>
+		<PackageId>ShadowViewer.Plugin.EpubLoader</PackageId>
+		<RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+		<UseWinUI>true</UseWinUI>
+		<Nullable>enable</Nullable>
+		<LangVersion>12</LangVersion>
+		<EnableMsixTooling>true</EnableMsixTooling>
+
+		<!--插件版本号(nuget包版本号)-->
+		<Version>0.1.0</Version>
+		<!--插件仓库地址(nuget包仓库地址)-->
+		<RepositoryUrl>https://github.com/kitUIN/ShadowViewer.Plugin.EpubLoader</RepositoryUrl>
+		<!--插件介绍(nuget包介绍)-->
+		<Description>使本地阅读支持epub文件</Description>
+		<!--插件作者(nuget包作者)-->
+		<Authors>kitUIN</Authors>
+
+		<!--nuget数据 -->
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>$(RepositoryUrl)</PackageProjectUrl>
+		<Copyright>Copyright 2023-2025</Copyright>
+		<PackageTags>wasdk;ShadowViewer;plugin;winui</PackageTags> 
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<!--插件元数据 -->
+		<PluginMeta>
+			<Id>Local</Id>
+			<Name>Epub文件加载器</Name>
+			<Version>$(Version)</Version>
+			<Logo>fluent://regular/ResizeImage</Logo>
+			<PluginLang>zh-CN</PluginLang>
+			<WebUri>$(RepositoryUrl)</WebUri>
+			<Description>$(Description)</Description>
+			<Authors>$(Authors)</Authors>
+			<!-- 最低支持的Core版本号 -->
+			<CoreVersion>2025.4.18.6</CoreVersion>
+			<PluginManage> 
+				<CanSwitch>false</CanSwitch>
+			</PluginManage>
+		</PluginMeta>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
+	<ItemGroup Label="Dependencies">
+		 <PackageReference Include="ShadowViewer.Plugin.Local" Version="1.4.0" /> 
+	</ItemGroup>
+	<ItemGroup>  
+	  <PackageReference Include="VersOne.Epub" Version="3.3.4" />
+	</ItemGroup>
+
+</Project>

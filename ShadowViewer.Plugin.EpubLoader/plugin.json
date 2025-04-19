@@ -1,0 +1,16 @@
+{
+  "DllName": "ShadowViewer.Plugin.EpubLoader",
+  "Description": "插件介绍",
+  "Authors": "kitUIN",
+  "WebUri": "https://github.com/kitUIN/ShadowViewer",
+  "Logo": "fluent://regular/ResizeImage",
+  "PluginManage": {
+    "CanSwitch": false,
+    "CanOpenFolder": false
+  },
+  "CoreVersion": "2025.4.18.6",
+  "Id": "Local",
+  "Name": "插件名称",
+  "Version": "0.1.0",
+  "Dependencies": []
+}
