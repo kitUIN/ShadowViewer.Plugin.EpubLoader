@@ -1,6 +1,10 @@
-﻿using ShadowPluginLoader.Attributes;
+﻿using DryIoc;
+using ShadowPluginLoader.Attributes;
+using ShadowPluginLoader.WinUI;
 using ShadowViewer.Core.Plugins;
 using ShadowViewer.Plugin.EpubLoader.I18n;
+using ShadowViewer.Plugin.EpubLoader.Services;
+using ShadowViewer.Plugin.Local.Services.Interfaces;
 
 
 namespace ShadowViewer.Plugin.EpubLoader;
@@ -14,6 +18,8 @@ public partial class EpubLoaderPlugin : AShadowViewerPlugin
     /// </summary>
     partial void ConstructorInit()
     {
+        DiFactory.Services.Register<IComicImporter,EpubComicImporter>(Reuse.Singleton,
+            made: Parameters.Of.Type(_ => Meta.Id));
     }
     /// <inheritdoc/>
     public override string DisplayName => I18N.DisplayName;

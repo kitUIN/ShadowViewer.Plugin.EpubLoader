@@ -1,16 +1,17 @@
 {
   "DllName": "ShadowViewer.Plugin.EpubLoader",
-  "Description": "插件介绍",
+  "Description": "使本地阅读支持epub文件",
   "Authors": "kitUIN",
-  "WebUri": "https://github.com/kitUIN/ShadowViewer",
+  "WebUri": "https://github.com/kitUIN/ShadowViewer.Plugin.EpubLoader",
   "Logo": "fluent://regular/ResizeImage",
   "PluginManage": {
-    "CanSwitch": false,
-    "CanOpenFolder": false
+    "CanSwitch": false
   },
   "CoreVersion": "2025.4.18.6",
   "Id": "Local",
-  "Name": "插件名称",
+  "Name": "Epub文件加载器",
   "Version": "0.1.0",
-  "Dependencies": []
+  "Dependencies": [
+    "ShadowViewer.Plugin.Local>=1.4.0"
+  ]
 }

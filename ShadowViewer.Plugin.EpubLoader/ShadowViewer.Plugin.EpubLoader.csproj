@@ -46,8 +46,5 @@
 	<ItemGroup Label="Dependencies">
 		 <PackageReference Include="ShadowViewer.Plugin.Local" Version="1.4.0" /> 
 	</ItemGroup>
-	<ItemGroup>  
-	  <PackageReference Include="VersOne.Epub" Version="3.3.4" />
-	</ItemGroup>
 
 </Project>
