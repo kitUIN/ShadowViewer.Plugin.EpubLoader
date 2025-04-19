@@ -27,7 +27,7 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<!--插件元数据 -->
 		<PluginMeta>
-			<Id>Local</Id>
+			<Id>EpubLoader</Id>
 			<Name>Epub文件加载器</Name>
 			<Version>$(Version)</Version>
 			<Logo>fluent://regular/ResizeImage</Logo>
