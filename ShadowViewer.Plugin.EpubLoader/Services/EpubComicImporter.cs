@@ -72,5 +72,6 @@ public partial class EpubComicImporter : FolderComicImporter
             .Include(z1 => z1.ReadingRecord)
             .Include(z2 => z2.Authors)
             .ExecuteCommandAsync();
+        await SaveComic(path, comicId, info.CoverImagePath == null);
     }
 }

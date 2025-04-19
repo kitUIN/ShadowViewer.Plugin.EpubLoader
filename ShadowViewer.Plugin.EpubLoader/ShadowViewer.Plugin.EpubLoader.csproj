@@ -11,11 +11,11 @@
 		<EnableMsixTooling>true</EnableMsixTooling>
 
 		<!--插件版本号(nuget包版本号)-->
-		<Version>0.1.0</Version>
+		<Version>0.1.1</Version>
 		<!--插件仓库地址(nuget包仓库地址)-->
 		<RepositoryUrl>https://github.com/kitUIN/ShadowViewer.Plugin.EpubLoader</RepositoryUrl>
 		<!--插件介绍(nuget包介绍)-->
-		<Description>使本地阅读支持epub文件</Description>
+		<Description>使本地阅读器支持epub文件</Description>
 		<!--插件作者(nuget包作者)-->
 		<Authors>kitUIN</Authors>
 
@@ -28,7 +28,7 @@
 		<!--插件元数据 -->
 		<PluginMeta>
 			<Id>EpubLoader</Id>
-			<Name>Epub文件加载器</Name>
+			<Name>本地阅读Epub</Name>
 			<Version>$(Version)</Version>
 			<Logo>fluent://regular/ResizeImage</Logo>
 			<PluginLang>zh-CN</PluginLang>
